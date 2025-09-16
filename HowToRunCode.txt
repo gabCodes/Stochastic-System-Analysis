@@ -1,0 +1,27 @@
+General purpose of each file:
+ss_generator - generate state space for the given assignment conditions
+stability_analysis - perform the stability analysis
+time_domain_analysis - perform the time domain analysis
+spectral analysis - perform the spectral analysis AND compute variances
+
+In order to see the results shown in the report do the following:
+Stability Analysis:
+- Run to check stability assessment of damped/undamped
+- If the pole zero maps are desired uncomment the according pzmap function
+
+Time Domain Analysis:
+Run time_domain_analysis for the plots
+
+Spectral Analysis:
+Run spectral_analysis for the plots (ignore the redundant timeseries plot)
+
+Variances:
+Run spectral_analysis and once its been run to completion type into console:
+tab_u = Undamped variances computed via Var.m
+tab_pd = Damped variances computed via Var.m
+tab_au = Analytical undamped variances
+tab_ad = Analytical damped variances
+tab_fu = FFT undamped variances
+tab_fd = FFT damped variances
+tab_pwu = pwelch undamped variances
+tab_pwd = pwelch damped variances
