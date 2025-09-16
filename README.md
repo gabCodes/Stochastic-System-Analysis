@@ -67,11 +67,11 @@ The PSDs / periodograms and a brief background for each method are given below. 
 
 To construct the analytical PSDs, the state-space system needs to be known in order to extract the desired input-output transfer function. Once known, the PSD of a state $x$ can be calculated by:
 
-$$ S_{xx}(\omega) = |H(\omega)|^2 S_{nn}(\omega) $$
+$$ S_{xx}(\omega) = \vert H(\omega) \vert ^2 S_{nn}(\omega) $$
 
 Where $H(\omega)$ is the transfer function mapping a noise input $n$ to a state output $x$. Since the white noise had a unit spectral density, this simplifies to just:
 
-$$ S_{xx}(\omega) = |H(\omega)|^2$$
+$$ S_{xx}(\omega) = \vert H(\omega) \vert ^2$$
 
 MATLAB's bode function was used to get the magnitude. It takes as input the state representation and a 4000 length frequency axis vector with bounds $\omega \in [10^{-2},10^{2}]$.  The analytical one-sided PSD for $\theta$ is shown below.
 
