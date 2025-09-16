@@ -96,7 +96,7 @@ The Welch routine involves smoothing the state traces by first breaking the time
 
 
 <div align="center">
-	<img src="figures/Hamming_Window.png" alt="Hamming Window" width="550">
+	<img src="figures/Hamming_Window.png" alt="Hamming Window" width="450">
 </div>
 
 In essence, the window function forces the signal to be more periodic by attenuating the start and end, leading to reduced leakage. The resulting periodogram is then the average sum of all $K$ segments. The periodogram for $\theta$ constructed with this technique is shown below.
